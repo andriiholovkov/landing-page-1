@@ -1,0 +1,15 @@
+@import './reset.scss';
+@import './variables.scss';
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 28px;
+    margin-left: 38px;
+    margin-right: 38px;
+    margin-bottom: 28px;
+
+    &__logo {
+        background-color: #000;
+    }
+}

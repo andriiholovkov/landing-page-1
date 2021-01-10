@@ -1,0 +1,19 @@
+@mixin title-h2 {
+    color: $primary-font;
+    line-height: 64px;
+    font-size: 58px;
+    font-weight: 700;
+}
+
+@mixin primary-btn-bg {
+    background-color: $primary-btn;
+    border-radius: 5px;
+    color: $white;
+}
+
+@mixin secondary-font {
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 400;
+    text-align: left;
+}
