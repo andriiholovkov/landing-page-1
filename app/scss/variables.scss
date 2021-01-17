@@ -1,11 +1,29 @@
-$font: 'Circular Std', sans-serif;
+$CircularStd-Book: 'CircularStd-Book', sans-serif;
+$CircularStd-Medium: 'CircularStd-Medium', sans-serif;
+$CircularStd-Bold: 'CircularStd-Bold', sans-serif;
 
 $primary-btn: #258AFF;
+$primary-btn-hover: #1E6FCC;
+$primary-btn-focus: #124580;
+$primary-btn-visited: #761E78;
 $primary-font: #1D293F;
 $secondary-font: #7C8087;
-$bg-divider: #E2E4E8;
+$divider: #E2E4E8;
 $white: #ffffff;
 $ic-bg-colored: #E9F7FE;
 $ic-star: #F5A623;
 $ic-heart: #FF523D;
 $ic-mail: #8C97AC;
+$mobile-width: 567px;
+$tablet-width: 991px;
+$desktop-width: 1200px;
+
+%heading {
+    color: $primary-font;
+    font-family: $CircularStd-Bold;
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 70px;
+    text-align: left;
+    letter-spacing: -1px;
+}

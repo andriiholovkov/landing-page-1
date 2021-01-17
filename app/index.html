@@ -1,32 +1,132 @@
-@@include('parts/header.html')
-<header class='header'>
-    <div class="menu"> 
-            <a href="https://www.google.com" target="_blank">
-                <img src="./images/img_avatar-1.jpg" width="48" height="48" alt="">
-            </a>
-        <nav class="menu__nav">
-            <ul class="menu__lists">
-                <li menu__link>Demos</li>
-                <li menu__link>Pages</li>
-                <li menu__link>Support</li>
-            </ul>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"/>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__top">
+        <a class="header__logo-link" href="https://www.google.com" target="_blank">
+          <img class="header__logo-img" width="auto" height="36px" src="./svg/ic_logo.svg" alt="logo" />
+        </a>
+        <nav class="header__nav"> 
+          <ul class="header__list">
+            <li class="header__list-item">
+              <a class="header__list-link" href="#">Demos</a>
+            </li>
+            <li class="header__list-item">
+              <a class="header__list-link" href="#">Pages</a>
+            </li>
+            <li class="header__list-item">
+              <a class="header__list-link" href="#">Support</a>
+            </li>
+          </ul>
         </nav>
-        <a href="#">Get Started for Free</a>
-    </div>
-    <div class="head containter">
-        <div class="head__content">
-            <h1 class="head__title">Get valuable leads inside WordPress.</h1>
-            <p class="head_subheading">We’ve helped over 2,500 job seekers to get into the most popular tech teams.</p>
-            <a href="#">Get Started for Free</a>
-            <span class="head__caption">
-                Still confused?
-                <a class='head__link info-link' href="#">Check our 1 min video</a>
+        <a class="header__top-btn" href="#">Get Started for Free</a>
+      </div>
+      <div class="header__bottom container">
+        <div class="header__bottom-inner">
+          <h1 class="header__bottom-title">Get valuable leads inside WordPress.</h1>
+          <p class="header__bottom-subheading">
+            We’ve helped over 2,500 job seekers to get into the most popular
+            tech teams.
+          </p>
+          <a class="header__bottom-btn" href="#">Get Started for Free</a>
+          <span class="header__bottom-caption">
+            Still confused?
+            <a class="header__bottom-link" href="#">Check our 1 min video</a>
+          </span>
+        </div>
+        <div class="header__bottom-wrap">
+          <img class="header__bottom-img" width="609px" height="471px" src="./images/img_main.png" alt=""/>
+        </div>
+      </div>
+    </header>
+    <section class="social-activity">
+      <div class="container">
+        <div class="activity">
+          <div class="activity__downloads">
+            <div class="activity__downloads-title">10k</div>
+            <div class="activity__downloads-icon">
+              <svg class="downloads-icon__heart" width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M14.6774 2.17926C12.9141 0.460229 10.0445 0.460229 8.2809 2.17926C8.18313 2.27458 8.08955 2.37498 8.00013 2.48013C7.91072 2.37464 7.81713 2.27458 7.71901 2.17892C5.95577 0.45989 3.08615 0.45989 1.32256 2.17892C-0.441028 3.89796 -0.44068 6.69563 1.32256 8.415L7.75381 14.685C7.82165 14.7511 7.91072 14.7844 7.99978 14.7844C8.08885 14.7844 8.17792 14.7511 8.24576 14.685L14.677 8.415C16.4409 6.69597 16.4409 3.8983 14.6774 2.17926Z" fill="#FF523D"/>
+              </svg>
+              <svg class="downloads-icon__heart" width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M14.6774 2.17926C12.9141 0.460229 10.0445 0.460229 8.2809 2.17926C8.18313 2.27458 8.08955 2.37498 8.00013 2.48013C7.91072 2.37464 7.81713 2.27458 7.71901 2.17892C5.95577 0.45989 3.08615 0.45989 1.32256 2.17892C-0.441028 3.89796 -0.44068 6.69563 1.32256 8.415L7.75381 14.685C7.82165 14.7511 7.91072 14.7844 7.99978 14.7844C8.08885 14.7844 8.17792 14.7511 8.24576 14.685L14.677 8.415C16.4409 6.69597 16.4409 3.8983 14.6774 2.17926Z" fill="#FF523D"/>
+              </svg>
+              <svg class="downloads-icon__heart" width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M14.6774 2.17926C12.9141 0.460229 10.0445 0.460229 8.2809 2.17926C8.18313 2.27458 8.08955 2.37498 8.00013 2.48013C7.91072 2.37464 7.81713 2.27458 7.71901 2.17892C5.95577 0.45989 3.08615 0.45989 1.32256 2.17892C-0.441028 3.89796 -0.44068 6.69563 1.32256 8.415L7.75381 14.685C7.82165 14.7511 7.91072 14.7844 7.99978 14.7844C8.08885 14.7844 8.17792 14.7511 8.24576 14.685L14.677 8.415C16.4409 6.69597 16.4409 3.8983 14.6774 2.17926Z" fill="#FF523D"/>
+              </svg>
+              <svg class="downloads-icon__heart" width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M14.6774 2.17926C12.9141 0.460229 10.0445 0.460229 8.2809 2.17926C8.18313 2.27458 8.08955 2.37498 8.00013 2.48013C7.91072 2.37464 7.81713 2.27458 7.71901 2.17892C5.95577 0.45989 3.08615 0.45989 1.32256 2.17892C-0.441028 3.89796 -0.44068 6.69563 1.32256 8.415L7.75381 14.685C7.82165 14.7511 7.91072 14.7844 7.99978 14.7844C8.08885 14.7844 8.17792 14.7511 8.24576 14.685L14.677 8.415C16.4409 6.69597 16.4409 3.8983 14.6774 2.17926Z" fill="#FF523D"/>
+              </svg>
+              <svg class="downloads-icon__heart" width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M14.6774 2.17926C12.9141 0.460229 10.0445 0.460229 8.2809 2.17926C8.18313 2.27458 8.08955 2.37498 8.00013 2.48013C7.91072 2.37464 7.81713 2.27458 7.71901 2.17892C5.95577 0.45989 3.08615 0.45989 1.32256 2.17892C-0.441028 3.89796 -0.44068 6.69563 1.32256 8.415L7.75381 14.685C7.82165 14.7511 7.91072 14.7844 7.99978 14.7844C8.08885 14.7844 8.17792 14.7511 8.24576 14.685L14.677 8.415C16.4409 6.69597 16.4409 3.8983 14.6774 2.17926Z" fill="#FF523D"/>
+              </svg>
+            </div>
+            <span class="activity__downloads-text">Active Downloads
+              <a class="activity__downloads-link" href="#" target="__blank" >On Websites</a>
             </span>
+          </div>
+          <div class="activity__raiting">
+            <div class="activity__raiting-title">4.7</div>
+            <div class="activity__raiting-icons">
+              <svg class="raiting-icon__star" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="17" height="17" fill="white"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M16.3833 6.78789L11.0555 6.01382L8.67381 1.18611C8.60601 1.07081 8.48223 1 8.34847 1C8.2147 1 8.09093 1.07081 8.02313 1.18611L5.6403 6.01273L0.311069 6.78789C0.174365 6.80762 0.0607138 6.90324 0.0178921 7.03456C-0.0249296 7.16587 0.010503 7.31011 0.109295 7.40664L3.9655 11.1649L3.05534 16.4712C3.03212 16.6073 3.08806 16.7447 3.19969 16.8259C3.31132 16.907 3.45932 16.9178 3.58155 16.8537L8.3472 14.3486L13.1128 16.8526C13.2351 16.9167 13.3831 16.9059 13.4947 16.8248C13.6063 16.7436 13.6623 16.6062 13.6391 16.4701L12.7289 11.1649L16.5851 7.40664C16.6839 7.31016 16.7193 7.16599 16.6766 7.0347C16.6339 6.9034 16.5203 6.80773 16.3837 6.78789H16.3833Z" fill="#F5A623"/>
+              </svg>
+              <svg class="raiting-icon__star" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="17" height="17" fill="white"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M16.3833 6.78789L11.0555 6.01382L8.67381 1.18611C8.60601 1.07081 8.48223 1 8.34847 1C8.2147 1 8.09093 1.07081 8.02313 1.18611L5.6403 6.01273L0.311069 6.78789C0.174365 6.80762 0.0607138 6.90324 0.0178921 7.03456C-0.0249296 7.16587 0.010503 7.31011 0.109295 7.40664L3.9655 11.1649L3.05534 16.4712C3.03212 16.6073 3.08806 16.7447 3.19969 16.8259C3.31132 16.907 3.45932 16.9178 3.58155 16.8537L8.3472 14.3486L13.1128 16.8526C13.2351 16.9167 13.3831 16.9059 13.4947 16.8248C13.6063 16.7436 13.6623 16.6062 13.6391 16.4701L12.7289 11.1649L16.5851 7.40664C16.6839 7.31016 16.7193 7.16599 16.6766 7.0347C16.6339 6.9034 16.5203 6.80773 16.3837 6.78789H16.3833Z" fill="#F5A623"/>
+              </svg>
+              <svg class="raiting-icon__star" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="17" height="17" fill="white"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M16.3833 6.78789L11.0555 6.01382L8.67381 1.18611C8.60601 1.07081 8.48223 1 8.34847 1C8.2147 1 8.09093 1.07081 8.02313 1.18611L5.6403 6.01273L0.311069 6.78789C0.174365 6.80762 0.0607138 6.90324 0.0178921 7.03456C-0.0249296 7.16587 0.010503 7.31011 0.109295 7.40664L3.9655 11.1649L3.05534 16.4712C3.03212 16.6073 3.08806 16.7447 3.19969 16.8259C3.31132 16.907 3.45932 16.9178 3.58155 16.8537L8.3472 14.3486L13.1128 16.8526C13.2351 16.9167 13.3831 16.9059 13.4947 16.8248C13.6063 16.7436 13.6623 16.6062 13.6391 16.4701L12.7289 11.1649L16.5851 7.40664C16.6839 7.31016 16.7193 7.16599 16.6766 7.0347C16.6339 6.9034 16.5203 6.80773 16.3837 6.78789H16.3833Z" fill="#F5A623"/>
+              </svg>
+              <svg class="raiting-icon__star" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="17" height="17" fill="white"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M16.3833 6.78789L11.0555 6.01382L8.67381 1.18611C8.60601 1.07081 8.48223 1 8.34847 1C8.2147 1 8.09093 1.07081 8.02313 1.18611L5.6403 6.01273L0.311069 6.78789C0.174365 6.80762 0.0607138 6.90324 0.0178921 7.03456C-0.0249296 7.16587 0.010503 7.31011 0.109295 7.40664L3.9655 11.1649L3.05534 16.4712C3.03212 16.6073 3.08806 16.7447 3.19969 16.8259C3.31132 16.907 3.45932 16.9178 3.58155 16.8537L8.3472 14.3486L13.1128 16.8526C13.2351 16.9167 13.3831 16.9059 13.4947 16.8248C13.6063 16.7436 13.6623 16.6062 13.6391 16.4701L12.7289 11.1649L16.5851 7.40664C16.6839 7.31016 16.7193 7.16599 16.6766 7.0347C16.6339 6.9034 16.5203 6.80773 16.3837 6.78789H16.3833Z" fill="#F5A623"/>
+              </svg>
+              <svg class="raiting-icon__star" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="17" height="17" fill="white"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M16.3833 6.78789L11.0555 6.01382L8.67381 1.18611C8.60601 1.07081 8.48223 1 8.34847 1C8.2147 1 8.09093 1.07081 8.02313 1.18611L5.6403 6.01273L0.311069 6.78789C0.174365 6.80762 0.0607138 6.90324 0.0178921 7.03456C-0.0249296 7.16587 0.010503 7.31011 0.109295 7.40664L3.9655 11.1649L3.05534 16.4712C3.03212 16.6073 3.08806 16.7447 3.19969 16.8259C3.31132 16.907 3.45932 16.9178 3.58155 16.8537L8.3472 14.3486L13.1128 16.8526C13.2351 16.9167 13.3831 16.9059 13.4947 16.8248C13.6063 16.7436 13.6623 16.6062 13.6391 16.4701L12.7289 11.1649L16.5851 7.40664C16.6839 7.31016 16.7193 7.16599 16.6766 7.0347C16.6339 6.9034 16.5203 6.80773 16.3837 6.78789H16.3833Z" fill="#F5A623"/>
+              </svg>
+            </div>
+            <span class="activity__raiting-text">1,938 Rating
+              <a class="activity__raiting-link">WordPress Community</a>
+            </span>
+          </div>
         </div>
-        <div class="head__img-wrap">
-            <img src="#" alt="" class="head__img">
+        <div class="trusted-users">
+          <h3 class="trusted-users__text">Trusted by 25,000+ happy Marketers and WordPress users since 2018.</h3>
+          <span class="trusted-users__subtitle">Also featured in</span>
+          <img width="530px" height="auto" src="./images/img_logo-companies.jpg" alt="social media companies">
         </div>
-    </div>
-</header>
-<script src='js/main.min.js'></script>
-@@include('parts/footer.html')
+      </div>
+    </section>
+    <section class="instappoint container">
+      <div class="instappoint__inner">
+        <h2 class="instappoint__title">
+          Working with Instappoint is simple.
+        </h2>
+        <div class="instappoint__content">
+          <div class="instappoint__content-item">
+            <div class="content-item__icon">
+            <div class="content-item__title">
+              Find Leads
+            </div>
+            <p class="content-item__text">
+              We’ve helped over 2,500 job seekers to get into the most popular tech teams.
+            </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    </section>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>
