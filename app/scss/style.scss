@@ -71,6 +71,9 @@
 
   &__bottom-title {
     @extend %heading;
+    font-size: 70px;
+    line-height: 70px;
+    text-align: left;
     margin-bottom: 25px;
   }
 
@@ -295,5 +298,123 @@
 .instappoint {
   padding-top: 95px;
   padding-bottom: 35px;
-}  
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__title {
+    @extend %heading;
+    margin-bottom: 52px;
+    max-width: 571px;
+    text-align: center;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1009px;
+  }
+
+  &__content-item {
+
+    & + .instappoint__content-item {
+      margin-left: 133px;
+    }
+
+    .content-item__icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 96px;
+      height: 96px;
+      background-color: $primary-btn;
+      border-radius: 10px;
+      box-shadow: 0px 32px 54px rgba(37, 138, 255, 0.224553);
+      margin-bottom: 35px;
+    }
+
+    .content-item__title {
+      max-width: 249px;
+      color: $primary-font;
+      font-family: $CircularStd-Bold;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 34px;
+      margin-bottom: 20px;
+    }
+
+    .content-item__text {
+      min-width: 249px;
+      color: $secondary-font;
+      font-family: $CircularStd-Book;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 28px;
+    }
+
+    &:nth-child(2) {
+      margin-top: 75px;
+      position: relative;
+
+      &:after {
+        content: "";
+        position: absolute;
+        background-image: url("../images/img_arrow-1.png");
+        top: -20px;
+        left: -257px;
+        width: 224px;
+        height: 89px;
+        bottom: 1px solid red;
+      }
+    }
+
+    &:nth-child(3) {
+      margin-top: 145px;
+      position: relative;
+
+      &:after {
+        content: "";
+        position: absolute;
+        background-image: url("images/img_arrow-2.png");
+        top: -100px;
+        left: -268px;
+        width: 252px;
+        height: 198px;
+      }
+    }
+  }
+}
+
+.control {
+  position: relative;
+  padding-top: 55px;
+  padding-bottom: 55px;
+  
+  &__inner {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__title {
+    @extend %heading;
+    text-align: center;
+    max-width: 500px;
+    margin-bottom: 30px;
+  }
+
+  &__img-wrap:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 129px;
+    bottom: -66px;
+    left: 0;
+    background: linear-gradient(0deg, rgba(246, 252, 255, 0.0001) 0%, #F7F7F7 100%);
+  }
+}
   
