@@ -213,7 +213,6 @@
       margin-left: 3px;
     }
 
-
     &__raiting {
       display: flex;
       flex-direction: column;
@@ -417,4 +416,142 @@
     background: linear-gradient(0deg, rgba(246, 252, 255, 0.0001) 0%, #F7F7F7 100%);
   }
 }
-  
+
+.grow-business {
+  padding-top: 90px;
+  padding-bottom: 90px;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__content {
+    margin-right: 200px;
+  }
+
+  &__title {
+    @extend %heading;
+    max-width: 375px;
+    margin-bottom: 55px;
+  }
+}
+
+.business-advantages {
+
+  &__item {
+    display: flex;
+  }
+
+  &__item + .business-advantages__item {
+    margin-top: 40px;
+  }
+
+  &__icon-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 83px;
+    height: 83px;
+    border: 1px solid $divider;
+    border-radius: 10px;
+    margin-right: 30px;
+  }
+
+  &__text-wrap {
+    max-width: 205px;
+  }
+
+  &__title {
+    font-family: $CircularStd-Bold;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 34px;
+    color: $primary-font;
+    margin-bottom: 5px;
+  }
+
+  &__text {
+    font-family: $CircularStd-Book;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: $secondary-font;
+  }
+}
+
+.clients-meet {
+  padding-top: 90px;
+  padding-bottom: 90px;
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    @extend %heading;
+    margin-bottom: 85px;
+    max-width: 530px;
+  }
+
+  &__bottom {
+    display: flex;
+  }
+
+  &__img {
+    margin-right: 100px;
+    margin-left: -40px;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 45px;
+  }
+
+  &__text {
+    font-family: $CircularStd-Book;
+    font-size: 18px;
+    line-height: 32px;
+    color: $primary-font;
+    margin-bottom: 20px;
+    max-width: 445px;
+  }
+
+  &__btn {
+    align-items: center;
+    justify-content: center;
+    font-family: $CircularStd-Book;
+    color: $white;
+    font-size: 16px;
+    line-height: 24px;
+    background-color: $primary-btn;
+    display:flex;
+    width: 197px;
+    height: 65px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+  }  
+
+  &__quote-wrap {
+    max-width: 370px;
+
+    .quote__text {
+      font-family: $CircularStd-Book;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 25px;
+      color: $secondary-font;
+      margin-bottom: 15px;
+    }
+
+    .quote__author {
+      font-family: $CircularStd-Medium;
+      font-weight: 600;
+      font-size: 13px;
+      line-height: 18px;
+      color: $primary-font;
+    }
+  }
+}
