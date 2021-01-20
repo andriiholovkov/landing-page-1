@@ -33,6 +33,15 @@
     font-family: $CircularStd-Medium;
     font-weight: 400;
     color: $primary-font;
+    
+    &:hover {
+      color: $primary-btn-hover;
+      text-decoration: underline;
+    }
+
+    &:focus {
+      color: $primary-btn-focus;
+    }
   }
 
   &__top-btn {
@@ -482,7 +491,7 @@
 
 .clients-meet {
   padding-top: 90px;
-  padding-bottom: 90px;
+  padding-bottom: 160px;
 
   &__inner {
     display: flex;
@@ -532,6 +541,14 @@
     height: 65px;
     border-radius: 5px;
     margin-bottom: 30px;
+
+    &:hover {
+      background-color: $primary-btn-hover;
+    }
+
+    &:focus {
+      background-color: $primary-btn-focus;
+    }
   }  
 
   &__quote-wrap {
@@ -554,4 +571,59 @@
       color: $primary-font;
     }
   }
+}
+
+.manage-clients {
+  text-align: center;
+  padding: 164px 0;
+  background-image: url(../images/img_manage-clients.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+
+  &__title {
+    @extend %heading;
+    max-width: 670px;
+    text-align: center;
+    color: $white;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  
+  }
+
+  &__text {
+    font-family: $CircularStd-Book;
+    color: $white;
+    max-width: 450px;
+    font-size: 16px;
+    line-height: 28px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+
+  &__btn {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-family: $CircularStd-Book;
+    color: $white;
+    font-size: 16px;
+    line-height: 24px;
+    background-color: $primary-btn;
+    width: 197px;
+    height: 65px;
+    border-radius: 5px;
+    margin: 0 auto;
+
+    &:hover {
+      background-color: $primary-btn-hover;
+    }
+
+    &:focus {
+      background-color: $primary-btn-focus;
+    }
+  }
+}
+
+.footer {
+  padding: 115px 0;
 }
