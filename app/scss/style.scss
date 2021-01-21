@@ -626,4 +626,143 @@
 
 .footer {
   padding: 115px 0;
+
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    margin-right: 64px;
+
+    &__community {
+      margin-right: 98px;
+      max-width: 157px;
+    }
+
+    &__about-us {
+      margin-right: 64px;
+      max-width: 157px;
+    }
+
+    &__useful {
+      max-width: 157px;
+    }
+
+    &__title {
+      font-family: $CircularStd-Medium;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 32px;
+      color: $primary-font;
+      margin-bottom: 23px;
+    }
+
+    &__link {
+      font-family: $CircularStd-Book;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 40px;
+      color: $secondary-font;
+
+      &:hover {
+        color: $primary-btn-hover;
+      }
+      
+      &:focus {
+        color: $primary-btn-focus;
+      }
+      
+      &:visited {
+        color: $primary-btn-visited;
+      }
+    }
+  }
+
+  .newsletter-box {
+   text-align: left;
+   max-width: 413px;
+   
+   &__title {
+     font-family: $CircularStd-Medium;
+     font-weight: 600;
+     font-size: 18px;
+     line-height: 32px;
+     color: $primary-font;
+     margin-bottom: 23px;
+   }
+
+   &__text {
+     font-family: $CircularStd-Book;
+     font-weight: 400;
+     font-size: 16px;
+     line-height: 28px;
+     color: $secondary-font;
+     margin-bottom: 30px;
+   }
+  }
+
+  .subscribe-form {
+    position: relative;
+    box-sizing: border-box;
+
+    &__input {
+      min-width: 278px;
+      padding-top: 21px;
+      padding-bottom: 21px;
+      padding-left: 70px;
+      padding-right: 65px;
+      border-radius: 5px;
+      border: 1px solid $divider;
+      font-family: $CircularStd-Book;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 28px;
+
+      &:hover {
+        border-color: $input-hover;
+      }
+
+      &:focus {
+        border: 1px solid $primary-btn;
+        outline: none;
+        border-width: 2px ;
+      }
+    }
+
+    &__btn {
+      position: absolute;
+      top: 3px;
+      right: 1px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: $primary-btn;
+      border: none;
+      color: $white;
+      font-size: 16px;
+      line-height: 24px;
+      width: 160px;
+      height: 66px;
+      border-radius: 5px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: $primary-btn-hover;
+      }
+
+      &:focus {
+        background-color: $primary-btn-focus;
+      }
+    }
+
+    &__icon-mail {
+      position: absolute;
+      top: 24px;
+      left: 24px;
+    }
+  }
 }
