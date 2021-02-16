@@ -41,12 +41,17 @@
           </span>
         </div>
         <div class="header__bottom-wrap">
-          <img class="header__bottom-img" width="609px" height="471px" src="./images/img_main.png" alt=""/>
+          <picture>
+            <source srcset="/images/img_main-1200@1x.png 1x" media="(min-width: 1200px)">
+            <source srcset="/images/img_main-992@1x.png 1x" media="(min-width: 993px)">
+            <source srcset="/images/img_main-992@1x.png 1x" type="image/png" media="(max-width: 992px)">
+            <img src="images/img_main-1200@1x.png" alt="Agenda meeting with John">
+          </picture>
         </div>
       </div>
     </header>
     <section class="social-activity">
-      <div class="container">
+      <div class="social-activity__inner container">
         <div class="activity">
           <div class="activity__downloads">
             <div class="activity__downloads-title">10k</div>
@@ -103,7 +108,12 @@
         <div class="trusted-users">
           <h3 class="trusted-users__text">Trusted by 25,000+ happy Marketers and WordPress users since 2018.</h3>
           <span class="trusted-users__subtitle">Also featured in</span>
-          <img width="530px" height="auto" src="./images/img_logo-companies.png" alt="social media companies">
+          <picture>
+            <source srcset="/images/img_logo-companies-1200@1x.png 1x" media="(min-width: 1200px)">
+            <source srcset="/images/img_logo-companies-992@1x.png 1x" media="(min-width: 993px)">
+            <source srcset="/images/img_logo-companies-1200@1x.png 1x" type="image/png" media="(max-width: 992px)">
+            <img src="./images/img_logo-companies-992@1x.png" alt="Social media companies">
+          </picture>
         </div>
       </div>
     </section>
@@ -243,28 +253,30 @@
     </section>
     <section class="clients-meet container">
       <div class="clients-meet__inner">
-        <h2 class="clients-meet__title">
-          Meet with clients anytime, anywhere.
-        </h2>
-        <div class="clients-meet__bottom">
+        <div class="clients-meet__left-wrap">
+          <h2 class="clients-meet__title">
+            Meet with clients anytime, anywhere.
+          </h2>
           <img class="clients-meet__img" width="520px" height="634px" src="images/img_meet.png" alt="Meet with client"></img>
-          <div class="clients-meet__content">
-            <p class="clients-meet__text">
+        </div>
+        <div class="clients-meet__content">
+          <div class="clients-meet__text-box">
+            <p>
               Computer users and programmers have become so accustomed to using Windows, even for the changing capabilities and the appearances of the graphical interface of the versions, therefore it has remained Microsoft’s product.
             </p>
-            <p class="clients-meet__text">
+            <p>
               These companies release their own versions of the operating systems with minor changes, and yet always with the same bottom line. 
             </p>
-            <a class="clients-meet__btn" href="#">Get Started for Free</a>
-            <figure class="clients-meet__quote-wrap">
-              <blockquote class="clients-meet_quote">
-                <p class="quote__text">
-                  “The following article covers a topic that has recently moved to center stage–at least it seems that way. 
-                </p>
-                <figcaption class="quote__author">John Doe, Founder of Matrix</figcaption>
-              </blockquote>
-            </figure>
           </div>
+          <a class="clients-meet__btn" href="#">Get Started for Free</a>
+          <figure class="clients-meet__quote-wrap">
+            <blockquote class="clients-meet_quote">
+              <p class="quote__text">
+                “The following article covers a topic that has recently moved to center stage–at least it seems that way. 
+              </p>
+              <figcaption class="quote__author">John Doe, Founder of Matrix</figcaption>
+            </blockquote>
+          </figure>
         </div>
       </div>
     </section>

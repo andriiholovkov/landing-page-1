@@ -25,6 +25,19 @@ $desktop-width: 1200px;
     font-weight: 700;
     font-size: 58px;
     line-height: 64px;
-    text-align: left;
     letter-spacing: -1px;
+}
+
+%button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $white;
+    font-family: $CircularStd-Medium;
+    font-size: 16px;
+    line-height: 24px;
+    background-color: $primary-btn;
+    width: 197px;
+    height: 65px;
+    border-radius: 5px;
 }
